@@ -1,0 +1,7 @@
+body { font-family: sans-serif; margin:0; padding:0; background:white; color:#333; }
+.dark { background:#222; color:#eee; }
+.container { max-width:600px; margin:auto; padding:1rem; }
+header { display:flex; justify-content: space-between; align-items:center; }
+button { cursor:pointer; }
+ul { list-style:none; padding:0; }
+li { margin:0.5rem 0; }

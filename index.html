@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FitTrack</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>FitTrack</h1>
+      <button id="theme-toggle" title="Toggle Dark Mode">🌙</button>
+    </header>
+    <section id="add-section">
+      <h2>Add Workout</h2>
+      <form id="workout-form">
+        <input type="text" id="workout-name" placeholder="Workout Name" required/>
+        <input type="number" id="calories-burned" placeholder="Calories Burned" required min="1"/>
+        <button type="submit">Add Workout</button>
+      </form>
+      <div>Total Calories: <span id="total-calories">0</span></div>
+    </section>
+    <section id="list-section">
+      <h2>Your Workouts</h2>
+      <ul id="workouts"></ul>
+    </section>
+    <section id="chart-section">
+      <h2>Calories Burned Chart</h2>
+      <canvas id="caloriesChart"></canvas>
+      <p class="caption">Visualize your calorie trends over workouts (IH#1).</p>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
